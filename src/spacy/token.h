@@ -32,6 +32,7 @@ namespace Spacy
 
     bool check_flag(long p_attr) const;
     std::vector<Token> children() const;
+    std::vector<Token> ancestors() const;
     long cluster() const;
     long dep() const;
     std::string dep_() const;

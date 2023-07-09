@@ -33,6 +33,11 @@ namespace Spacy
     return Python::get_attr_vector<Token>(m_token, "children");
   }
 
+  std::vector<Token> Token::ancestors() const
+  {
+    return Python::get_attr_vector<Token>(m_token, "ancestors");
+  }
+
   long Token::cluster() const
   {
     return Python::get_attr_value<long>(m_token, "cluster");
